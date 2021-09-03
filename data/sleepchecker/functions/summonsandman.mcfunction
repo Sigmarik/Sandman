@@ -1,0 +1,1 @@
+summon husk ~ ~ ~ {CustomName:"\"Sandman's servant\"", Health:50, HandItems:[{Count:1, id:sand}, {Count:1, id:sand}], ArmorItems:[{}, {}, {}, {Count:1,id:sand}], HandDropChances:[1.0f,1.0f]}

@@ -1,0 +1,1 @@
+summon husk ~ ~ ~ {CustomName:"\"Sandman's minion\"", IsBaby:1b, HandItems:[{Count:1, id:red_sand}, {Count:1, id:red_sand}], ArmorItems:[{Count:1, id:leather_boots, tag:{Enchantments:[{id:"minecraft:unbreaking", lvl:255}, {id:"minecraft:depth_strider", lvl:255}, {id:"minecraft:soul_speed", lvl:10}]}}, {}, {}, {Count:1,id:red_sand}], HandDropChances:[1.0f,1.0f]}

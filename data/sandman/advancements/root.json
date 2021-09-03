@@ -1,0 +1,34 @@
+{
+    "display": {
+        "title": {
+            "text": "Spicy!"
+        },
+        "description": {
+            "text": "Eat sandmans's bomb withot any reason to do this."
+        },
+        "icon": {
+            "item": "minecraft:potato",
+            "nbt": "{display:{Name:'{\"text\":\"Primed TNT\"}'}}"
+        },
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true,
+        "background": "minecraft:textures/gui/advancements/backgrounds/stone.png"
+    },
+    "criteria": {
+        "Eat sandmans bomb": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "item": "minecraft:potato",
+                    "nbt": "{display:{Name:'{\"text\":\"Primed TNT\"}'}}",
+                    "count": {
+                        "min": 1,
+                        "max": 1
+                    }
+                }
+            }
+        }
+    }
+}

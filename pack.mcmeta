@@ -1,0 +1,6 @@
+{
+    "pack":{
+        "pack_format":6,
+        "description":"Checks for sleeping players on server and applyes some effects on those who are not sleeping"
+    }
+}
