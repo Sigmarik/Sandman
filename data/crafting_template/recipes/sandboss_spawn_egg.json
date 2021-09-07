@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        "#W#",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:sand"
+        },
+        "W": {
+            "item": "minecraft:white_bed"
+        }
+    },
+    "result": {
+        "item": "minecraft:knowledge_book"
+    }
+}
