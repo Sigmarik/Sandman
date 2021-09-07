@@ -1,0 +1,24 @@
+{
+    "display": {
+        "title": {
+            "text": "What an idea"
+        },
+        "description": {
+            "text": "Try to deep fry bomb and see what happend!"
+        },
+        "icon": {
+            "item": "minecraft:potato",
+            "nbt": "{display:{Name:'{\"text\":\"Primed TNT\"}'}}"
+        },
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false,
+        "background": "minecraft:textures/gui/advancements/backgrounds/stone.png"
+    },
+    "criteria": {
+        "make 3d graphics lessons important": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

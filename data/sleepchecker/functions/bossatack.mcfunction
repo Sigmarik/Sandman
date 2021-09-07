@@ -3,14 +3,14 @@ execute if score #Data BossAtackID matches -2 run scoreboard players set #Data B
 execute if score #Data BossAtackID matches 6 run effect give @e[limit=1, type=husk, name="SANDMAN"] levitation 1 10
 execute if score #Data BossAtackID matches 6 run scoreboard players set #Data BossAtackID -2
 
-execute if score #Data BossAtackID matches 5 run execute at @a[nbt={Inventory:[{id:"minecraft:potato", tag:{display:{Name:'{"text":"Primed TNT"}'}}}]}] run summon creeper ~ ~ ~ {Fuse:0, ExplosionRadius:3}
+execute if score #Data BossAtackID matches 5 run execute at @a[nbt={Inventory:[{id:"minecraft:potato", tag:{display:{Name:'{"text":"Primed TNT"}'}}}]}] run summon creeper ~ ~ ~ {CustomName:"Sandman's bomb", Fuse:0, ExplosionRadius:3}
 execute if score #Data BossAtackID matches 5 run clear @a[nbt={Inventory:[{id:"minecraft:potato", tag:{display:{Name:'{"text":"Primed TNT"}'}}}]}] tnt{display:{Name:'{"text":"Primed TNT"}'}}
 execute if score #Data BossAtackID matches 5 run execute at @e[type=item, nbt={Item:{tag:{display:{Name:'{"text":"Primed TNT"}'}}}}] run summon creeper ~ ~ ~ {CustomName:"Sandman's bomb", Fuse:0, ExplosionRadius:2}
 execute if score #Data BossAtackID matches 5 run scoreboard players set #Data BossAtackID 6
 
 execute if score #Data BossAtackID matches 4 run scoreboard players set #Data BossAtackID 5
 
-execute if score #Data BossAtackID matches 3 run give @p[distance=..30] potato{display:{Name:'{"text":"Primed TNT"}'}}
+execute if score #Data BossAtackID matches 3 as @p[distance=..30] run function sleepchecker:give_bomb
 execute if score #Data BossAtackID matches 3 run execute at @p[distance=..30] run particle flame ~ ~ ~ 1 1 1 .0001 200
 execute if score #Data BossAtackID matches 3 run title @p[distance=..30] title "Bomb in pockets!"
 execute if score #Data BossAtackID matches 3 run title @p[distance=..30] subtitle "throw it away or you will blow up"

@@ -33,3 +33,6 @@ execute at @e[type=husk, name="SANDMAN"] run execute if score #Data BossAtackID 
 execute at @e[type=husk, name="SANDMAN"] run execute if score #Data BossAtackID matches -1..0 run execute at @a[distance=..10] run particle minecraft:soul_fire_flame ~ ~2 ~ .125 .25 .125 .1 1
 execute at @e[type=husk, name="SANDMAN"] run execute if score #Data BossAtackID matches 0 run execute at @a[distance=..10] run particle minecraft:soul_fire_flame ~ ~2 ~ .125 .25 .125 .3 5
 execute if score #Data BossCounter matches 0 run kill @e[type=husk, name="Sandman's minion"]
+
+execute as @a run data get entity @s recipeBook.isFurnaceGuiOpen
+execute as @a at @s positioned ~ ~ ~ rotated as @s anchored eyes run function sleepchecker:furnace_trace

@@ -1,0 +1,1 @@
+give @s potato{CustomModelData: 31415, display:{Name:'{"text":"Primed TNT"}'}}

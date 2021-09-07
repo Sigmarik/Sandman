@@ -1,6 +1,6 @@
 gamerule commandBlockOutput true
 gamerule sendCommandFeedback true
-gamerule logAdminCommands false
+gamerule logAdminCommands true
 
 scoreboard objectives add SleepingTime dummy
 scoreboard objectives add NumPlayers dummy
